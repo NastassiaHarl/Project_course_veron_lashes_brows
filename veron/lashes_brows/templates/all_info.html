@@ -7,13 +7,9 @@
  <body>
   <h1>VERON</h1>
   <h1>LASHES & BROWS</h1>
-  <p>
-   <ul>
-     <li><b>Ваш личный мастер:</b> <i> href={{ context.master.name }}>ВЕРОНИКА< </i></li>
-   </ul>
-  </p>
-
-  <p>Первый абзац.</p>
+  <p><b>Ваш личный мастер:</b></p>
+  <p><a target="_blank" href={% url 'book' book_id=book.id %} target="_blank">Открыть в новом окне</a></p>
+href={% url 'book' book_id=book.id %}>{{ book.name }}
   <p>Второй абзац.</p>
  </body>
 </html>
