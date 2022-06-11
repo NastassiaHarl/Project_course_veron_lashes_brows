@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="utf-8">
-  <title>All info</title>
- </head>
- <body>
-  <h1>Заголовок</h1>
-  <p>Первый абзац.</p>
-  <p>Второй абзац.</p>
- </body>
-</html>
+{% extends 'base.html' %}
+{% block title %}All info{% endblock %}
+{% block content %}
+
+<div class="address-page">
+    <div class="address-box">
+        <h2>Адрес:</h2>
+        <p> г.Молодечно, ул.Космонавтов, 8а, 3 этаж тел: (044)534-20-75</p>
+        <div class="map-img"><img alt='map' src="https://static-maps.yandex.ru/1.x/?api_key=01931952-3aef-4eba-951a-8afd26933ad6&theme=light&lang=ru_RU&size=520%2C440&l=map&spn=0.008210%2C0.004801&ll=26.846781%2C54.308078&lg=0&cr=0&pt=26.846781%2C54.308078%2Ccomma&signature=Y7WpRLo4prLXG7BxM6qFsnd8WyTPgI7lg3WuQJ4aQ60="  width="400"></div>
+        <a target="_blank" href="https://www.google.com/maps/place/10,+%D1%83%D0%BB.+%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%BE%D0%B2,+%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D1%87%D0%BD%D0%BE+222301/@54.3048658,26.853756,17z/data=!4m13!1m7!3m6!1s0x46dc7443ab34c13d:0xecf0870c6cc6be89!2zMyDRjdGC0LDQtiwg0YPQuy4g0JrQvtGB0LzQvtC90LDQstGC0L7QsiA4LCDQnNC-0LvQvtC00LXRh9C90L4!3b1!8m2!3d54.3048658!4d26.853756!3m4!1s0x46dc7443a8bbb705:0x8df9e7f7d87cdcef!8m2!3d54.3047257!4d26.854724">Яндекс карта</a>
+    </div>
+</div>
+
+{% endblock %}

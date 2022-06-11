@@ -1,15 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="utf-8">
-  <title>All info</title>
- </head>
- <body>
-  <h1>VERON</h1>
-  <h1>LASHES & BROWS</h1>
-  <p><b>Ваш личный мастер:</b></p>
-  <p><a target="_blank" href={% url 'book' book_id=book.id %} target="_blank">Открыть в новом окне</a></p>
-href={% url 'book' book_id=book.id %}>{{ book.name }}
-  <p>Второй абзац.</p>
- </body>
-</html>
+{% extends 'base.html' %}
+{% block title %}All info{% endblock %}
+{% block content %}
+<div class="info">
+    <div class="g-container">
+        <ul>
+    <li>
+        <span>Ваш личный мастер:</span>
+        <a target="_blank" href="master">Вероника</a>
+    </li>
+    <li>
+        <span>Адрес:</span>
+        <p>г.Молодечно, ул.Космонавтов, 8а, 3 этаж тел: (044)534-20-75</p>
+        <a target="_blank" href="address">Как добраться</a>
+    </li>
+    <li>
+        <span>Услуги:</span>
+        <a target="_blank" href="info_service">Моделирование/окраска брровей и наращивание ресниц</a>
+    </li>
+    <li>
+        <span>Подарочный сертификат и акции</span>
+        <a target="_blank" href="gift_certificate">актуальное</a>
+    </li>
+</ul>
+    </div>
+</div>
+
+
+{% endblock %}

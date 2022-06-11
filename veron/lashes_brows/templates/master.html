@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="utf-8">
-  <title>All info</title>
- </head>
- <body>
-  <h1>Заголовок</h1>
-  <!-- Комментарий -->
-  <p>Первый абзац.</p>
-  <p>Второй абзац.</p>
- </body>
-</html>
+{% extends 'base.html' %}
+{% block title %}All info{% endblock %}
+{% block content %}
+
+<p><h2>Обо мне</h2></p>
+<p><h3>Наращиваю реснибы более трех лет. Сотни довольных клиентов.
+Кработе подхожу ответственно. Подберу и посоветую то, что вам действительно подходит!
+Использую качественные материалы. Кройне редко вызывающие раздражение и аллергии.
+Носятся рестницы не менее трех недель.
+Бровями занимаюсь около года. Форма и цвет держаться не менее тех недель.
+Люблю свою работу! Вкладываю в нее душу и сердце!</h3></p>
+
+<img alt='certificate' src="https://брендлист.рф/upload/000/u9/3a/9d/c94a6a85.jpg"  width="300">
+<img alt='certificate' src="https://academy-em.ru/app/uploads/2019/04/resnitsy-2-4-d.jpg"  width="300">
+<img alt='certificate' src="https://garmoniya-center.ru/upload/iblock/c80/c80f792a43cf7b859dc8d639cb0dd612.png"  width="300">
+<img alt='certificate' src="https://i.pinimg.com/236x/d4/6c/0c/d46c0cede415a0d4530fd20ec0b798a9.jpg"  width="300">
+{% endblock %}

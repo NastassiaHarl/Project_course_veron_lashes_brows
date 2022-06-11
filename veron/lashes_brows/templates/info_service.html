@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}All info{% endblock %}
+{% block content %}
+
+
+<div class="info-service">
+    <div class="g-container">
+    <table class="service-box book-table table table-striped table-hover">
+    <thead>
+    <tr>
+        <th scope="col">Услуга</th>
+        <th scope="col">Информация о услуге</th>
+        <th scope="col">Стоимость</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for service in context.services %}
+        <tr>
+            <td scope="row">{{ service.name_service }} </td>
+            <td>{{ service.info_service }}</td>
+            <td>{{ service.price }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+        <div class="service-img">
+            <img alt='eyebrow_photo' src="https://clipstips.ru/x/1600/606/IMG_7220.jpg"  width="200">
+<img alt='eyebrow_photo' src="https://lash.ru/upload/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2%D0%B0%20%D0%9D%D0%B0%D1%82%D0%B0%D0%BB%D1%8C%D1%8F.jpg"  width="200">
+<img alt='eyelash_photo' src="https://oblaka4you.ru/thumb/2/R_s4Rd-wPH2hGZrr-VWVdQ/r/d/foto_1_narashchivanie_resnic_do_i_posle.jpg"  width="200">
+<img alt='eyelash_photo' src="https://vplate.ru/images/article/orig/2020/01/narashchivanie-resnic-1-5d.jpg"  width="200">
+<img alt='eyelash_photo' src="https://redsale.by/rfiles/krutolevich-si/W85921z8s29R0647l8T9N55r50HRa1-redsale_max.jpg"  width="200">
+<img alt='eyelash_photo' src="https://gomel.redsale.by/rfiles/kasyan-mv/9NwQ25FR57RfRuE09hE4hL90tZLvLp-redsale_max.jpg"  width="200">
+
+        </div>
+
+<table class="service-review book-table table table-striped table-hover">
+    <thead>
+    <tr>
+        <th scope="col">Отзывы:</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for review in context.reviews %}
+        <tr>
+            <td scope="row">{{ review.text }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+    </div>
+</div>
+
+
+
+{% endblock %}
